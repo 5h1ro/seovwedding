@@ -208,63 +208,6 @@
         <!--/ .Content One Area -->
         <!-- Pricing Table Area -->
 
-        <div class="table-section table-section--l4 bg-default-3 border-bottom border-default-color-3">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 col-xl-9 col-xxl-7">
-                        <div class="section-title section-title--l4 text-center">
-                            <h6 class="section-title__sub-heading text-electric-violet-3">Demo</h6>
-                            <h2 class="section-title__heading mb-4">Coba Tema Anda</h2>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="portfolio-area portfolio-area--inner-1 bg-default-3 border-bottom border-default-color-3 pt-0">
-                    <div class="container">
-                        <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="500"
-                            data-aos-once="true">
-                            <div class="col-md-12 col-xs-10">
-                                <div class="d-flex align-items-center justify-content-center">
-                                    <!-- Single Grid -->
-                                    <div class="grid-item customer-support development customer-support ">
-                                        <a href="{{ url('1/shiro-yuuki/to=demo', []) }}" class="portfolio__single">
-                                            <img class="w-100 rounded rounded-25" style="opacity: 0.75;"
-                                                src="{{ asset('template/template1/thumbnail.png') }}" alt="">
-                                            <div
-                                                class="d-none d-md-flex portfolio__hover bg-readical-red dark-mode-texts align-items-center justify-content-between">
-                                                <div class="hover-content">
-                                                    <h3 class="portfolio__hover__heading">Tema 1</h3>
-                                                    <p class="portfolio__hover__text">Klik untuk melihat</p>
-                                                </div>
-                                                <div class="hover-right">
-                                                    <div class="portfolio__hover__link text-white">
-                                                        <i class="fas fa-external-link-square-alt"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex d-md-none mt-2 p-3 rounded rounded-25 bg-readical-red dark-mode-texts align-items-center justify-content-between"
-                                                style="opacity: 0.75;">
-                                                <div class="hover-content">
-                                                    <h3 class="portfolio__hover__heading">Tema 1</h3>
-                                                    <p class="portfolio__hover__text">Klik untuk melihat</p>
-                                                </div>
-                                                <div class="hover-right">
-                                                    <div class="portfolio__hover__link text-white">
-                                                        <i class="fas fa-external-link-square-alt"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <!--/ .Single Grid -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <!--/ .Pricing Table Area -->
         <!-- Testimonial Area -->
 

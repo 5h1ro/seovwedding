@@ -8,7 +8,22 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <title>Hello, world!</title>
+    <title>Kiki &amp; Zacky</title>
+    <meta name="description" content="The Wedding of Kiki &amp; Zacky"/>
+    <meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+    <link rel="canonical" href="https://seovwedding.seovdetech.com/1/kiki-zacky/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Kiki &amp; Zacky" />
+    <meta property="og:description" content="The Wedding of Kiki &amp; Zacky" />
+    <meta property="og:url" content="https://seovwedding.seovdetech.com/1/kiki-zacky/" />
+    <meta property="og:site_name" content="seovwedding" />
+    <meta property="og:image" content="https://seovwedding.si-bima.com/template/template1/WhatsApp-Image-2023-05-03-at-10.36.41.jpeg" />
+    <meta property="og:image:secure_url" content="https://seovwedding.si-bima.com/template/template1/WhatsApp-Image-2023-05-03-at-10.36.41.jpeg" />
+    <meta property="og:image:width" content="1002" />
+    <meta property="og:image:height" content="1500" />
+    <meta property="og:image:alt" content="Kiki &#038; Zacky" />
+    <meta property="og:image:type" content="image/jpeg" />
     <style>
         :root {
             --primary: rgba(182, 132, 68, 0.589);
@@ -1112,7 +1127,7 @@
 
         .overlay::before {
             content: "";
-            background-image: url("{{ asset('template/template1/example1.jpeg') }}");
+            background-image: url("http://seovwedding.si-bima.com/template/template1/WhatsApp-Image-2023-05-03-at-10.36.41.jpeg");
             background-position: 50%;
             position: absolute;
             top: 0px;
@@ -1176,7 +1191,7 @@
             <p class="font4 mt-2 display-1" style="font-weight: bolder">
                 <b>{{ $invitation->name_couple }}</b>
             </p>
-            <img src="{{ asset('template/template1/example1.jpeg') }}" class="rounded-circle rounded avatar">
+            <img src="{{ asset('template/template1/WhatsApp-Image-2023-05-03-at-10.36.40.jpeg') }}" class="rounded-circle rounded avatar">
             <p class="font2 font2-sm mt-4 display-1">
                 Kepada Bapak/Ibu/Saudara/i
             </p>
@@ -1210,7 +1225,7 @@
                     <p class="font4 font4-lg">
                         The Wedding Of
                     </p>
-                    <img src="{{ asset('template/template1/example1.jpeg') }}" class="rounded-circle rounded avatar">
+                    <img src="{{ asset('template/template1/WhatsApp-Image-2023-05-03-at-10.36.41-2.jpeg') }}" class="rounded-circle rounded avatar">
                     <p class="font1 mt-5 display-1">
                         {{ $invitation->name_couple }}
                     </p>
@@ -1250,7 +1265,7 @@
                     </p>
                     <div id="couple-sm">
                         <div>
-                            <img src="{{ asset('template/template1/couple1.jpeg') }}" class="rounded-img">
+                            <img src="http://seovwedding.si-bima.com/template/template1/WhatsApp-Image-2023-05-03-at-10.36.40.jpeg" class="rounded-img">
                         </div>
                         <p class="font3 font3-sm font3-lg mt-3">
                             {{ $invitation->fullname_man }}
@@ -1263,7 +1278,7 @@
                             &
                         </p>
                         <div>
-                            <img src="{{ asset('template/template1/couple2.jpeg') }}" class="rounded-img">
+                            <img src="http://seovwedding.si-bima.com/template/template1/WhatsApp-Image-2023-05-03-at-10.36.41.jpeg" class="rounded-img">
                         </div>
                         <p class="font3 font3-sm font3-lg mt-3">
                             {{ $invitation->fullname_woman }}
@@ -1277,7 +1292,7 @@
                         <div class="row justify-content-center align-items-center mt-5">
                             <div class="col-4">
                                 <div>
-                                    <img src="{{ asset('template/template1/couple1.jpeg') }}" class="rounded-img">
+                                    <img src="http://seovwedding.si-bima.com/template/template1/WhatsApp-Image-2023-05-03-at-10.36.40.jpeg" class="rounded-img">
                                 </div>
                                 <p class="font3 font3-sm font3-lg mt-3">
                                     {{ $invitation->fullname_man }}
@@ -1295,7 +1310,7 @@
                             </div>
                             <div class="col-4">
                                 <div>
-                                    <img src="{{ asset('template/template1/couple2.jpeg') }}" class="rounded-img">
+                                    <img src="http://seovwedding.si-bima.com/template/template1/WhatsApp-Image-2023-05-03-at-10.36.41.jpeg" class="rounded-img">
                                 </div>
                                 <p class="font3 font3-sm font3-lg mt-3">
                                     {{ $invitation->fullname_woman }}
@@ -1313,25 +1328,6 @@
             <div class="absolute">
                 <img src="{{ asset('template/template1/ornament3.png') }}" class="icon-parallax rellax"
                     data-rellax-speed="2">
-            </div>
-            <div id="story" class="py-5">
-                <div class="text-center">
-                    <p class="font4 font4-lg">
-                        Love Story
-                    </p>
-                </div>
-                <div class="timeline">
-                    @foreach ($invitation->ls as $key => $ls)
-                        <div class="container {{ $key % 2 == 0 ? 'left' : 'right' }}">
-                            <div class="content">
-                                <h2 class="font4" style="font-weight: bolder; color: white">
-                                    <b>{{ $ls->year_ls }}</b>
-                                </h2>
-                                <p class="font2-sm" style="color: white">{{ $ls->story_ls }}</p>
-                            </div>
-                        </div>
-                    @endforeach
-                </div>
             </div>
             <div class="d-flex justify-content-end">
                 <img src="{{ asset('template/template1/ornament3.png') }}" class="icon-parallax rellax"
@@ -1618,7 +1614,7 @@
                     <p class="font4 font4-lg">
                         Terima Kasih
                     </p>
-                    <img src="{{ asset('template/template1/example1.jpeg') }}"
+                    <img src="{{ asset('template/template1/WhatsApp-Image-2023-05-03-at-10.36.41-2.jpeg') }}"
                         class="rounded-circle rounded avatar">
                     <div class="d-flex justify-content-center">
                         <div class="main-container-lg mx-4 my-5">
