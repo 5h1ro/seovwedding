@@ -1224,7 +1224,7 @@
                     <p class="font4 font4-lg">
                         The Wedding Of
                     </p>
-                    <img src="{{ asset('template/template1/WhatsApp-Image-2023-05-03-at-10.36.41-2.jpeg') }}"
+                    <img src="{{ $invitation->photo_couple }}"
                         class="rounded-circle rounded avatar">
                     <p class="font1 mt-5 display-1">
                         {{ $invitation->name_couple }}
@@ -1614,7 +1614,7 @@
                     <p class="font4 font4-lg">
                         Terima Kasih
                     </p>
-                    <img src="{{ asset('template/template1/WhatsApp-Image-2023-05-03-at-10.36.41-2.jpeg') }}"
+                    <img src="{{ $invit->photo_couple }}"
                         class="rounded-circle rounded avatar">
                     <div class="d-flex justify-content-center">
                         <div class="main-container-lg mx-4 my-5">
