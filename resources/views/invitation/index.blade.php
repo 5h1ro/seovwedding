@@ -1614,7 +1614,7 @@
                     <p class="font4 font4-lg">
                         Terima Kasih
                     </p>
-                    <img src="{{ $invit->photo_couple }}"
+                    <img src="{{ $invitation->photo_couple }}"
                         class="rounded-circle rounded avatar">
                     <div class="d-flex justify-content-center">
                         <div class="main-container-lg mx-4 my-5">
