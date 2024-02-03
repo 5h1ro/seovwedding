@@ -8,21 +8,23 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <title>Kiki &amp; Zacky</title>
-    <meta name="description" content="The Wedding of Kiki &amp; Zacky"/>
-    <meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
-    <link rel="canonical" href="https://seovwedding.seovdetech.com/1/kiki-zacky/" />
+    <title>{{ $invitation->nickname_man }} &amp; {{ $invitation->nickname_woman }}</title>
+    <meta name="description" content="The Wedding of {{ $invitation->nickname_man }} &amp; {{ $invitation->nickname_woman }}" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+    <link rel="canonical" href="{{ $invitation->photo_couple }}/" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="Kiki &amp; Zacky" />
-    <meta property="og:description" content="The Wedding of Kiki &amp; Zacky" />
-    <meta property="og:url" content="https://seovwedding.seovdetech.com/1/kiki-zacky/" />
+    <meta property="og:title" content="{{ $invitation->nickname_man }} &#038; {{ $invitation->nickname_woman }}" />
+    <meta property="og:description" content="The Wedding of {{ $invitation->nickname_man }} &amp; {{ $invitation->nickname_woman }}" />
+    <meta property="og:url" content="{{ $invitation->photo_couple }}" />
     <meta property="og:site_name" content="seovwedding" />
-    <meta property="og:image" content="https://seovwedding.si-bima.com/template/template1/WhatsApp-Image-2023-05-03-at-10.36.41.jpeg" />
-    <meta property="og:image:secure_url" content="https://seovwedding.si-bima.com/template/template1/WhatsApp-Image-2023-05-03-at-10.36.41.jpeg" />
+    <meta property="og:image"
+        content="{{ $invitation->photo_couple }}" />
+    <meta property="og:image:secure_url"
+        content="{{ $invitation->photo_couple }}" />
     <meta property="og:image:width" content="1002" />
     <meta property="og:image:height" content="1500" />
-    <meta property="og:image:alt" content="Kiki &#038; Zacky" />
+    <meta property="og:image:alt" content="{{ $invitation->nickname_man }} &#038; {{ $invitation->nickname_woman }}" />
     <meta property="og:image:type" content="image/jpeg" />
     <style>
         :root {
@@ -1093,7 +1095,6 @@
                 width: 150px;
             }
         }
-
     </style>
     <style>
         @media only screen and (max-device-width:480px) {
@@ -1110,7 +1111,6 @@
                 font-size: 0.8em;
             }
         }
-
     </style>
     <style>
         .overlay {
@@ -1127,7 +1127,7 @@
 
         .overlay::before {
             content: "";
-            background-image: url("http://seovwedding.si-bima.com/template/template1/WhatsApp-Image-2023-05-03-at-10.36.41.jpeg");
+            background-image: "{{ $invitation->photo_couple }}";
             background-position: 50%;
             position: absolute;
             top: 0px;
@@ -1181,7 +1181,6 @@
                 right: 35px;
             }
         }
-
     </style>
 </head>
 
@@ -1191,7 +1190,7 @@
             <p class="font4 mt-2 display-1" style="font-weight: bolder">
                 <b>{{ $invitation->name_couple }}</b>
             </p>
-            <img src="{{ asset('template/template1/WhatsApp-Image-2023-05-03-at-10.36.40.jpeg') }}" class="rounded-circle rounded avatar">
+            <img src="{{ $invitation->photo_couple }}" class="rounded-circle rounded avatar">
             <p class="font2 font2-sm mt-4 display-1">
                 Kepada Bapak/Ibu/Saudara/i
             </p>
@@ -1225,7 +1224,8 @@
                     <p class="font4 font4-lg">
                         The Wedding Of
                     </p>
-                    <img src="{{ asset('template/template1/WhatsApp-Image-2023-05-03-at-10.36.41-2.jpeg') }}" class="rounded-circle rounded avatar">
+                    <img src="{{ asset('template/template1/WhatsApp-Image-2023-05-03-at-10.36.41-2.jpeg') }}"
+                        class="rounded-circle rounded avatar">
                     <p class="font1 mt-5 display-1">
                         {{ $invitation->name_couple }}
                     </p>
@@ -1265,7 +1265,7 @@
                     </p>
                     <div id="couple-sm">
                         <div>
-                            <img src="http://seovwedding.si-bima.com/template/template1/WhatsApp-Image-2023-05-03-at-10.36.40.jpeg" class="rounded-img">
+                            <img src="{{ $invitation->photo_man }}" class="rounded-img">
                         </div>
                         <p class="font3 font3-sm font3-lg mt-3">
                             {{ $invitation->fullname_man }}
@@ -1278,7 +1278,7 @@
                             &
                         </p>
                         <div>
-                            <img src="http://seovwedding.si-bima.com/template/template1/WhatsApp-Image-2023-05-03-at-10.36.41.jpeg" class="rounded-img">
+                            <img src="{{ $invitation->photo_woman }}" class="rounded-img">
                         </div>
                         <p class="font3 font3-sm font3-lg mt-3">
                             {{ $invitation->fullname_woman }}
@@ -1292,7 +1292,7 @@
                         <div class="row justify-content-center align-items-center mt-5">
                             <div class="col-4">
                                 <div>
-                                    <img src="http://seovwedding.si-bima.com/template/template1/WhatsApp-Image-2023-05-03-at-10.36.40.jpeg" class="rounded-img">
+                                    <img src="{{ $invitation->photo_man }}" class="rounded-img">
                                 </div>
                                 <p class="font3 font3-sm font3-lg mt-3">
                                     {{ $invitation->fullname_man }}
@@ -1310,7 +1310,7 @@
                             </div>
                             <div class="col-4">
                                 <div>
-                                    <img src="http://seovwedding.si-bima.com/template/template1/WhatsApp-Image-2023-05-03-at-10.36.41.jpeg" class="rounded-img">
+                                    <img src="{{ $invitation->photo_woman }}" class="rounded-img">
                                 </div>
                                 <p class="font3 font3-sm font3-lg mt-3">
                                     {{ $invitation->fullname_woman }}
@@ -1396,8 +1396,8 @@
                                         @endif
                                         @if ($schedule->link_location_schedule)
                                             <div class="d-flex justify-content-center mt-3">
-                                                <a class="location"
-                                                    href="{{ $schedule->link_location_schedule }}" target="_blank">
+                                                <a class="location" href="{{ $schedule->link_location_schedule }}"
+                                                    target="_blank">
                                                     <div class="font2 text-white py-2 px-3">
                                                         <i class="fa fa-map-marker" aria-hidden="true"></i>
                                                         <b>Lihat Lokasi</b>
@@ -1570,8 +1570,8 @@
                         @csrf
                         <div class="form-group">
                             <label for="tamu" class="font2">Nama Tamu</label>
-                            <input type="text" class="form-control card-white font2" id="tamu" name="guest"
-                                aria-describedby="emailHelp" placeholder="Masukkan Nama Anda">
+                            <input type="text" class="form-control card-white font2" id="tamu"
+                                name="guest" aria-describedby="emailHelp" placeholder="Masukkan Nama Anda">
                         </div>
                         <div class="form-group mt-2">
                             <label for="ucapan" class="font2">Ucapan</label>
