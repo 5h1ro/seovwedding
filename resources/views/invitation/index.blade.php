@@ -1496,7 +1496,7 @@
                     </div>
                 </div>
             </div>
-            <div id="protocol" class="d-flex justify-content-center">
+            {{-- <div id="protocol" class="d-flex justify-content-center">
                 <div class="text-center main-container-lg">
                     <p class="font4 font4-lg">
                         Protokol Kesehatan
@@ -1533,7 +1533,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <div class="">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                     <path fill="#ffffff" fill-opacity="1"
