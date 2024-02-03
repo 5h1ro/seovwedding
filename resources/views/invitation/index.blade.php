@@ -1127,7 +1127,7 @@
 
         .overlay::before {
             content: "";
-            background-image: url("http://seovwedding.si-bima.com/template/template1/WhatsApp-Image-2023-05-03-at-10.36.41.jpeg");
+            background-image: url("{{$invitation->photo_couple}}");
             background-position: 50%;
             position: absolute;
             top: 0px;
