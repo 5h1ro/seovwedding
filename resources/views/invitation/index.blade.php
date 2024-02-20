@@ -1271,7 +1271,7 @@
                             {{ $invitation->fullname_man }}
                         </p>
                         <p class="font2 font2-sm font2-lg">
-                            Putra Pertama dari <br> Bapak {{ $invitation->father_man }} & Ibu
+                            Putra {{ $invitation->child_man }} dari <br> Bapak {{ $invitation->father_man }} & Ibu
                             {{ $invitation->mother_man }}
                         </p>
                         <p class="mx-3 font1-sm font1-lg">
@@ -1284,7 +1284,7 @@
                             {{ $invitation->fullname_woman }}
                         </p>
                         <p class="font2 font2-sm font2-lg">
-                            Putri Pertama dari <br> Bapak {{ $invitation->father_woman }} & Ibu
+                            Putri {{ $invitation->child_woman }} dari <br> Bapak {{ $invitation->father_woman }} & Ibu
                             {{ $invitation->mother_woman }}
                         </p>
                     </div>

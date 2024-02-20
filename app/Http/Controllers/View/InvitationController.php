@@ -24,7 +24,6 @@ class InvitationController extends Controller
         if (is_null($invitation)) {
             return response(view('errors.500'));
         } else {
-            dd($invitation);
             $visitor = Invitation::where([['id', $id], ['slug', $slug]])->first();
             $visitor->visitor = $visitor->visitor + 1;
             $visitor->save();
