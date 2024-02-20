@@ -230,7 +230,7 @@
         }
 
         .rounded-img {
-            height: 286px;
+            height: auto;
             width: 214px;
             border-radius: 20px;
             box-shadow: 5px 10px 20px 0 var(--shadow)
