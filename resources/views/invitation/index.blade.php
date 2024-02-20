@@ -839,7 +839,7 @@
             }
 
             .rounded-img {
-                height: 171.6px;
+                height: auto;
                 width: 128.4px;
                 transform-origin: top;
                 border: 7px solid var(--white);
