@@ -1641,10 +1641,10 @@
     <div class="fixed-bottom d-flex justify-content-center mb-4 d-lg-none" style="z-index: 1000;">
 
         <div class="audio">
-            <iframe src="{{ asset('template/template1/backsound.mp3') }}" allow="autoplay" id="audio"
+            <iframe src="{{ asset('template/template1/backsound2.mp3') }}" allow="autoplay" id="audio"
                 style="display:none"></iframe>
             <audio id="audioID" autoplay loop>
-                <source src="{{ asset('template/template1/backsound.mp3') }}" type="audio/mp3">
+                <source src="{{ asset('template/template1/backsound2.mp3') }}" type="audio/mp3">
             </audio>
             <div class="botón fixed-bottom" id="botón">
                 <div class="fondo"></div>
