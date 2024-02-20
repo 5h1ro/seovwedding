@@ -14,7 +14,6 @@ class InvitationController extends Controller
     public function index($id, $slug, $to)
     {
         $invitation = Invitation::where([['id', $id], ['slug', $slug]])->first();
-        dd($invitation);
         $invitation->child_man = $invitation->child_man == 1 ? 'Pertama' : 'Ke' . Terbilang::make($invitation->child_man);
         $invitation->child_woman = $invitation->child_woman == 1 ? 'Pertama' : 'Ke' . Terbilang::make($invitation->child_woman);
         $invitation->countDownDate = Carbon::createFromFormat('Y-m-d H:i:s', $invitation->countdown)->format('M d, Y H:i:s');
@@ -25,6 +24,7 @@ class InvitationController extends Controller
         if (is_null($invitation)) {
             return response(view('errors.500'));
         } else {
+            dd($invitation);
             $visitor = Invitation::where([['id', $id], ['slug', $slug]])->first();
             $visitor->visitor = $visitor->visitor + 1;
             $visitor->save();
