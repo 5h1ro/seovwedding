@@ -1328,6 +1328,27 @@
             <div class="absolute">
                 <img src="{{ $invitation->ornament3 }}" class="icon-parallax rellax" data-rellax-speed="2">
             </div>
+            @if (count($invitation->ls) > 0)
+                <div id="story" class="py-5">
+                    <div class="text-center">
+                        <p class="font4 font4-lg">
+                            Love Story
+                        </p>
+                    </div>
+                    <div class="timeline">
+                        @foreach ($invitation->ls as $key => $ls)
+                            <div class="container {{ $key % 2 == 0 ? 'left' : 'right' }}">
+                                <div class="content">
+                                    <h2 class="font4" style="font-weight: bolder; color: white">
+                                        <b>{{ $ls->year_ls }}</b>
+                                    </h2>
+                                    <p class="font2-sm" style="color: white">{{ $ls->story_ls }}</p>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+            @endif
             <div class="d-flex justify-content-end">
                 <img src="{{ $invitation->ornament3 }}" class="icon-parallax rellax" data-rellax-speed="3"
                     style="height: 60px;">
