@@ -64,8 +64,9 @@ Route::middleware(['auth'])->group(function () {
         Route::middleware(['member'])->group(function () {
             Route::prefix('member')->group(function () {
                 Route::controller(MDashboardController::class)->group(function () {
-                    Route::get('/dashboard', 'index')->name('member');
+                    Route::get('/dashboard/{id_invitation?}', 'index')->name('member');
                     Route::prefix('invitation')->group(function () {
+                        Route::get('/create', 'create')->name('invitation.create');
                         Route::post('/store', 'store')->name('invitation.store');
                         Route::post('/update/{id}', 'update')->name('invitation.update');
                         Route::get('/delete/{id}', 'delete')->name('invitation.delete');

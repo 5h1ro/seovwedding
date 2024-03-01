@@ -9,29 +9,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <title>{{ $invitation->nickname_man }} &amp; {{ $invitation->nickname_woman }}</title>
-    <meta name="description" content="The Wedding of {{ $invitation->nickname_man }} &amp; {{ $invitation->nickname_woman }}" />
+    <meta name="description"
+        content="The Wedding of {{ $invitation->nickname_man }} &amp; {{ $invitation->nickname_woman }}" />
     <meta name="robots" content="index, follow, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
     <link rel="canonical" href="{{ $invitation->photo_couple }}/" />
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="{{ $invitation->nickname_man }} &#038; {{ $invitation->nickname_woman }}" />
-    <meta property="og:description" content="The Wedding of {{ $invitation->nickname_man }} &amp; {{ $invitation->nickname_woman }}" />
+    <meta property="og:description"
+        content="The Wedding of {{ $invitation->nickname_man }} &amp; {{ $invitation->nickname_woman }}" />
     <meta property="og:url" content="{{ $invitation->photo_couple }}" />
     <meta property="og:site_name" content="seovwedding" />
-    <meta property="og:image"
-        content="{{ $invitation->photo_couple }}" />
-    <meta property="og:image:secure_url"
-        content="{{ $invitation->photo_couple }}" />
+    <meta property="og:image" content="{{ $invitation->photo_couple }}" />
+    <meta property="og:image:secure_url" content="{{ $invitation->photo_couple }}" />
     <meta property="og:image:width" content="1002" />
     <meta property="og:image:height" content="1500" />
-    <meta property="og:image:alt" content="{{ $invitation->nickname_man }} &#038; {{ $invitation->nickname_woman }}" />
+    <meta property="og:image:alt"
+        content="{{ $invitation->nickname_man }} &#038; {{ $invitation->nickname_woman }}" />
     <meta property="og:image:type" content="image/jpeg" />
     <style>
         :root {
-            --primary: rgba(182, 132, 68, 0.589);
-            --primary-fill: rgb(212, 168, 109);
-            --text: rgb(143, 93, 29);
-            --text-darken: rgb(175, 104, 11);
+            --primary: {{ $invitation->color_primary }};
+            --primary-fill: {{ $invitation->color_primary_fill }};
+            --text: {{ $invitation->color_text }};
+            --text-darken: {{ $invitation->color_text_darken }};
             --white: #ffffff;
             --shadow: rgba(0, 0, 0, 0.486);
         }
@@ -74,7 +75,7 @@
         }
 
         div.transbox {
-            background-color: rgba(230, 195, 154, 0.3);
+            background-color: {{ $invitation->color_background }};
         }
 
         .font1 {
@@ -1127,7 +1128,7 @@
 
         .overlay::before {
             content: "";
-            background-image: url("{{$invitation->photo_couple}}");
+            background-image: url("{{ $invitation->photo_couple }}");
             background-position: 50%;
             position: absolute;
             top: 0px;
@@ -1207,25 +1208,24 @@
             </div>
         </div>
         <div>
-            <img src="{{ asset('template/template1/ornament2.png') }}" class="ornament2" style="top: 50%">
+            <img src="{{ $invitation->ornament2 }}" class="ornament2" style="top: 50%">
         </div>
     </div>
     <div>
-        <img src="{{ asset('template/template1/ornament2.png') }}" class="ornament2">
+        <img src="{{ $invitation->ornament2 }}" class="ornament2">
     </div>
     <div class="background">
         <div class="transbox">
             <div id="home" class="vh-100 overflow-x-hidden">
                 <div class="relative">
-                    <img src="{{ asset('template/template1/ornament1.png') }}" class="w-50 ornament1 rl-50">
-                    <img src="{{ asset('template/template1/ornament1flip.png') }}" class="w-50 ornament1-flip rn-50">
+                    <img src="{{ $invitation->ornament1 }}" class="w-50 ornament1 rl-50">
+                    <img src="{{ $invitation->ornament1_flip }}" class="w-50 ornament1-flip rn-50">
                 </div>
                 <div class="text-center mt">
                     <p class="font4 font4-lg">
                         The Wedding Of
                     </p>
-                    <img src="{{ $invitation->photo_couple }}"
-                        class="rounded-circle rounded avatar">
+                    <img src="{{ $invitation->photo_couple }}" class="rounded-circle rounded avatar">
                     <p class="font1 mt-5 display-1">
                         {{ $invitation->name_couple }}
                     </p>
@@ -1326,17 +1326,16 @@
                 </div>
             </div>
             <div class="absolute">
-                <img src="{{ asset('template/template1/ornament3.png') }}" class="icon-parallax rellax"
-                    data-rellax-speed="2">
+                <img src="{{ $invitation->ornament3 }}" class="icon-parallax rellax" data-rellax-speed="2">
             </div>
             <div class="d-flex justify-content-end">
-                <img src="{{ asset('template/template1/ornament3.png') }}" class="icon-parallax rellax"
-                    data-rellax-speed="3" style="height: 60px;">
+                <img src="{{ $invitation->ornament3 }}" class="icon-parallax rellax" data-rellax-speed="3"
+                    style="height: 60px;">
             </div>
             <div id="schedule" class="overflow-x-hidden">
                 <div class="relative mt-n5">
-                    <img src="{{ asset('template/template1/ornament1.png') }}" class="w-50 ornament1 rl-50">
-                    <img src="{{ asset('template/template1/ornament1flip.png') }}" class="w-50 ornament1-flip rn-50">
+                    <img src="{{ $invitation->ornament1 }}" class="w-50 ornament1 rl-50">
+                    <img src="{{ $invitation->ornament1_flip }}" class="w-50 ornament1-flip rn-50">
                 </div>
                 <div id="" class="d-flex justify-content-center mt-5">
                     <div class="py-5 main-container-lg">
@@ -1413,21 +1412,20 @@
                 </div>
             </div>
             <div class="absolute">
-                <img src="{{ asset('template/template1/ornament3.png') }}" class="icon-parallax rellax"
-                    data-rellax-speed="5.8" style="height: 50px;">
+                <img src="{{ $invitation->ornament3 }}" class="icon-parallax rellax" data-rellax-speed="5.8"
+                    style="height: 50px;">
             </div>
             <div class="absolute">
-                <img src="{{ asset('template/template1/ornament3.png') }}" class="icon-parallax rellax"
-                    data-rellax-speed="2">
+                <img src="{{ $invitation->ornament3 }}" class="icon-parallax rellax" data-rellax-speed="2">
             </div>
             <div class="absolute" style="left: 75%">
                 <div class="d-flex justify-content-end">
-                    <img src="{{ asset('template/template1/ornament3.png') }}" class="icon-parallax rellax"
-                        data-rellax-speed="3.8" style="height: 50px;">
+                    <img src="{{ $invitation->ornament3 }}" class="icon-parallax rellax" data-rellax-speed="3.8"
+                        style="height: 50px;">
                 </div>
                 <div class="d-flex justify-content-end">
-                    <img src="{{ asset('template/template1/ornament3.png') }}" class="icon-parallax rellax"
-                        data-rellax-speed="4" style="height: 80px;">
+                    <img src="{{ $invitation->ornament3 }}" class="icon-parallax rellax" data-rellax-speed="4"
+                        style="height: 80px;">
                 </div>
             </div>
             <div id="galery" class="pt-5">
@@ -1614,8 +1612,7 @@
                     <p class="font4 font4-lg">
                         Terima Kasih
                     </p>
-                    <img src="{{ $invitation->photo_couple }}"
-                        class="rounded-circle rounded avatar">
+                    <img src="{{ $invitation->photo_couple }}" class="rounded-circle rounded avatar">
                     <div class="d-flex justify-content-center">
                         <div class="main-container-lg mx-4 my-5">
                             <p class="font2 font2-sm">
@@ -1641,10 +1638,10 @@
     <div class="fixed-bottom d-flex justify-content-center mb-4 d-lg-none" style="z-index: 1000;">
 
         <div class="audio">
-            <iframe src="{{ asset('template/template1/backsound2.mp3') }}" allow="autoplay" id="audio"
+            <iframe src="{{ $invitation->backsound }}" allow="autoplay" id="audio"
                 style="display:none"></iframe>
             <audio id="audioID" autoplay loop>
-                <source src="{{ asset('template/template1/backsound2.mp3') }}" type="audio/mp3">
+                <source src="{{ $invitation->backsound }}" type="audio/mp3">
             </audio>
             <div class="botón fixed-bottom" id="botón">
                 <div class="fondo"></div>

@@ -273,6 +273,42 @@ class MemberController extends Controller
             }
         }
 
+
+        if ($request->hasFile('ornament1')) {
+            $filename_ornament1 = 'ornament1_' . $now . '.jpg';
+            $file_ornament1 = $request->file('ornament1');
+            $file_ornament1->move(public_path('img/ornament'), $filename_ornament1);
+            $invitation->ornament1 = asset('img/ornament/' . $filename_ornament1);
+        }
+        if ($request->hasFile('ornament1_flip')) {
+            $filename_ornament1_flip = 'ornament1_flip_' . $now . '.jpg';
+            $file_ornament1_flip = $request->file('ornament1_flip');
+            $file_ornament1_flip->move(public_path('img/ornament'), $filename_ornament1_flip);
+            $invitation->ornament1_flip = asset('img/ornament/' . $filename_ornament1_flip);
+        }
+        if ($request->hasFile('ornament2')) {
+            $filename_ornament2 = 'ornament2_' . $now . '.jpg';
+            $file_ornament2 = $request->file('ornament2');
+            $file_ornament2->move(public_path('img/ornament'), $filename_ornament2);
+            $invitation->ornament2 = asset('img/ornament/' . $filename_ornament2);
+        }
+        if ($request->hasFile('ornament3')) {
+            $filename_ornament3 = 'ornament3_' . $now . '.jpg';
+            $file_ornament3 = $request->file('ornament3');
+            $file_ornament3->move(public_path('img/ornament'), $filename_ornament3);
+            $invitation->ornament3 = asset('img/ornament/' . $filename_ornament3);
+        }
+        if ($request->hasFile('backsound')) {
+            $filename_backsound = 'backsound_' . $now . '.mp3';
+            $file_backsound = $request->file('backsound');
+            $file_backsound->move(public_path('audio/backsound'), $filename_backsound);
+            $invitation->backsound = asset('audio/backsound/' . $filename_backsound);
+        }
+        $invitation->color_primary = $request->color_primary;
+        $invitation->color_primary_fill = $request->color_primary_fill;
+        $invitation->color_text = $request->color_text;
+        $invitation->color_text_darken = $request->color_text_darken;
+        $invitation->color_background = $request->color_background;
         $invitation->save();
 
         return redirect()->back();

@@ -27,6 +27,6 @@ class Member extends Model
 
     public function invitation()
     {
-        return $this->hasOne(Invitation::class, 'id_member');
+        return $this->hasMany(Invitation::class, 'id_member');
     }
 }

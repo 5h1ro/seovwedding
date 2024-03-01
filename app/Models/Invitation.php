@@ -33,6 +33,16 @@ class Invitation extends Model
         'number',
         'address_gift',
         'slug',
+        'color_primary',
+        'color_primary_fill',
+        'color_text',
+        'color_text_darken',
+        'color_background',
+        'ornament1',
+        'ornament1_flip',
+        'ornament2',
+        'ornament3',
+        'backsound',
     ];
 
     protected $dates = [

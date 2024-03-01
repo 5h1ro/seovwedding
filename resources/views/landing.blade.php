@@ -63,12 +63,12 @@
                                         Login
                                     </a>
                                 </div>
-                                <div class="col-6">
+                                {{-- <div class="col-6">
                                     <a class="btn btn-niagara h-45 rounded-50 text-white shadow--niagara-3"
                                         href="{{ route('register') }}">
                                         Register
                                     </a>
-                                </div>
+                                </div> --}}
                             @endauth
                         </div>
                     </div>
@@ -98,11 +98,11 @@
                                         data-aos-delay="900" data-aos-once="true">Home</a>
                                 </div>
                             @else
-                                <div class="welcome-btn-group--l8">
+                                {{-- <div class="welcome-btn-group--l8">
                                     <a class="btn btn--lg-2 btn-niagara rounded-50 me-3 text-white"
                                         href="{{ route('register') }}" data-aos="fade-up" data-aos-duration="500"
                                         data-aos-delay="900" data-aos-once="true">Register</a>
-                                </div>
+                                </div> --}}
                             @endauth
                         </div>
                     </div>
@@ -140,8 +140,8 @@
                         <!--/ .Section Title -->
                     </div>
                 </div>
-                <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500"
-                    data-aos-once="true">
+                <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="500"
+                    data-aos-delay="500" data-aos-once="true">
                     <!-- Single Services -->
                     <div class="col-xl-3 col-lg-4 col-md-6 col-xs-8">
                         <div class="card card--services-l6 text-center card-hover__bittersweet">
@@ -238,10 +238,10 @@
                                             class="btn-niagara text-white btn btn--lg w-140 rounded-25">Home</a>
                                     </div>
                                 @else
-                                    <div class="d-flex align-items-start justify-content-start">
+                                    {{-- <div class="d-flex align-items-start justify-content-start">
                                         <a href="{{ route('register') }}"
                                             class="btn-niagara text-white btn btn--lg w-140 rounded-25">Register</a>
-                                    </div>
+                                    </div> --}}
                                 @endauth
                             </div>
                             <!--/ .Newsletter -->

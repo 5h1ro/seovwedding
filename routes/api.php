@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\MemberController;
+use App\Http\Controllers\Member\DashboardController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -20,3 +21,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('admin/member/get_data', [MemberController::class, 'getData'])->name('admin.member.get');
+Route::get('member/member/get_data/{id}', [DashboardController::class, 'getData'])->name('member.member.get');
