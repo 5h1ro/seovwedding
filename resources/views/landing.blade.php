@@ -124,7 +124,7 @@
                                 <div class="hero-l8-img-group__1">
                                     <img class="w-100" src="{{ asset('landing') }}/image/img1.png" alt="">
                                 </div>
-                                <div class="hero-l8-img-group__2">
+                                <div class="hero-l8-img-group__2 d-none d-md-block">
                                     <img class="w-100" src="{{ asset('landing') }}/image/img2.png" alt="">
                                 </div>
                             </div>
@@ -160,8 +160,7 @@
                             </div>
                             <h3 class="card--services-l6__heading">Tema gratis</h3>
                             <p class="card--services-l6__content">Ada banyak tema<br class="d-none d-xs-block"> yang
-                                bisa anda gunakan
-                                lpsum<br class="d-none d-xs-block"> secara gratis</p>
+                                bisa anda gunakan<br class="d-none d-xs-block"> secara gratis</p>
                         </div>
                     </div>
                     <!--/ .Single Services -->
