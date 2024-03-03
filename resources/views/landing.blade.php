@@ -8,7 +8,7 @@
     <title>
         Seov Invitation - Buat undangan website anda dengan keinginan anda sendiri
     </title>
-    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('icon.ico') }}" type="image/x-icon">
     <!-- Bootstrap , fonts & icons  -->
     <link rel="stylesheet" href="{{ asset('landing') }}/css/bootstrap.css">
     <link rel="stylesheet" href="{{ asset('landing') }}/fonts/icon-font/css/style.css">
@@ -23,6 +23,16 @@
     <link rel="stylesheet" href="{{ asset('landing') }}/plugins/theme-mode-switcher/switcher-panel.css">
     <link rel="stylesheet" href="{{ asset('landing') }}/css/main.css">
     <!-- Custom stylesheet -->
+    <title>{{ $invitation->nickname_man }} &amp; {{ $invitation->nickname_woman }}</title>
+    <meta name="description"
+        content="Undang teman, saudara, keluarga anda untuk memeriahkan acara pada hari bahagia anda" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Seovwedding - Undang kerabat untuk hari bahagia anda" />
+    <meta property="og:description"
+        content="Undang teman, saudara, keluarga anda untuk memeriahkan acara pada hari bahagia anda" />
+    <meta property="og:url" content="seovwedding.seovdetech.com" />
+    <meta property="og:site_name" content="seovwedding" />
 </head>
 
 <body data-theme-mode-panel-active data-theme="light">
