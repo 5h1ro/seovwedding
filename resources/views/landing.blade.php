@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="{{ asset('landing') }}/plugins/theme-mode-switcher/switcher-panel.css">
     <link rel="stylesheet" href="{{ asset('landing') }}/css/main.css">
     <!-- Custom stylesheet -->
-    <title>{{ $invitation->nickname_man }} &amp; {{ $invitation->nickname_woman }}</title>
+    <title>Seovwedding - Undang kerabat untuk hari bahagia anda</title>
     <meta name="description"
         content="Undang teman, saudara, keluarga anda untuk memeriahkan acara pada hari bahagia anda" />
     <meta property="og:locale" content="en_US" />
